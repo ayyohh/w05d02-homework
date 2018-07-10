@@ -8,7 +8,9 @@ app.get('/', (req, res) => {
 });
 
 app.get('/pokemon', (req, res) => {
-  res.render('index.ejs');
+  res.render('index.ejs', {
+    pokes: poke
+  });
 });
 
 
