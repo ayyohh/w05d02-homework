@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const poke = require('./models/pokemon.js');
-
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
   res.send('Welcome to the Pokemon home page');

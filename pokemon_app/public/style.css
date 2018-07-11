@@ -1,0 +1,10 @@
+body {
+  background-color: lavender;
+  font-family: arial;
+  color: darkcyan;
+  text-align: center;
+
+}
+li {
+  list-style-type: none;
+}
