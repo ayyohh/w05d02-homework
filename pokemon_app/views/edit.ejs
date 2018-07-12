@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" type="text/css" href="/style.css">
+
+</head>
+	<body class="edit">
+		<h1>Edit a Pokemon</h1>
+
+		<form class="build-a-poke" action="/pokemon/<%=pokes.id%>" method="POST">
+			Name: <input type="input" id="poke-name" name="name" placeholder="<%= pokes.name%>">
+			Image:<input type="input" id="poke-image" name="image" placeholder="<%= pokes.img %>">
+			Number: <input type="input" id="poke-id" name="id" placeholder="<%= pokes.id %>">
+			<input type="submit" id="create-poke">
+
+		</form>
+</br>
+		<a href="/pokemon">Back</a>
+
+
+	</body>
+</html>

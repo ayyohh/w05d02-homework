@@ -12,12 +12,15 @@
     <ul>
       <% for(let i = 0; i < pokes.length; i++){ %>
       <li>
-              <a href="/pokemon/<%=i%>"><%=pokes[i].name%></a>
-
+        
+        <% let idNum = pokes[i].id; %>
+        <a href="/pokemon/<%=idNum%>"><%=pokes[i].name%></a>
 
       </li>
       <% } %>
     </ul>
+
+    <a href="/pokemon/new">Add a Pokemon</a>
 
   </body>
 </html>

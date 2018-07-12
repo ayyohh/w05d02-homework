@@ -7,10 +7,17 @@
   </head>
   <body>
     <h1>Gotta Catch 'Em All!!!!!</h1>
-    <h2><%=pokes['name']%></h2>
 
-    <img src="<%=pokes['img']%>">
+    <h2><%=pokes.name%></h2>
+    <img src="<%=pokes.img%>">
 
+    <form action="/pokemon/<%=pokes.id%>?_method=DELETE" method="POST">
+      <input type="submit" value="DELETE"/>
+
+    </form>
+
+    <a href="/pokemon/<%= pokes.id %>/edit">Edit Pokemon</a>
+  </br>
     <a href="/pokemon">Back</a>
   </body>
 </html>
